@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 20px;
+    height: 100vh;
+    font-size: 18px;
+    background: url("pexels-felix-mittermeier-956999.jpg");
+    background-size: cover;
+}
+
+
+.form__button{
+    width: 300px;
+    padding: 1rem 2rem;
+    font-weight:bold;
+    font-size: 1.1rem;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.container{
+    display: flex;
+    align-content: end;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: cornflowerblue;
+}
+
+.form__input-group{
+    margin-bottom: 10px;
+}

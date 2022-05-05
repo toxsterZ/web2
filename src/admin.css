@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    height: 100vh;
+    font-size: 18px;
+    background: url("pexels-felix-mittermeier-956999.jpg");
+    background-size: cover;
+}
+
+h1{
+    margin-left: 2rem;
+    color: #dddddd;
+}
+
+h2{
+    margin-left: 2rem;
+    color: #dddddd;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin: 4rem;
+    width: 70%;
+    padding:  1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    border: none;
+    border-radius: var(rgb(0,0,128));
+    background: cornflowerblue;
+    outline: none;
+    cursor: pointer;
+}
