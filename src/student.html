@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="student.css">
+    <script src="add_student_validation.js"></script>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
   <div class="form__button">
-      <button class="form__button" type ="addStudent">Add Student</button>
+      <button class="form__button"  type ="addStudent" value="Show Div" onclick="showDiv()">Add Student</button>
   </div>
 
   <div class="form__button">
@@ -19,37 +21,53 @@
       <button class="form__button" type ="deleteStudent">Delete Student</button>
   </div>
 
-  <div class="container">
+  <div class="container_2">
+      <h1 class="form__title">List of Students</h1>
+      <div/>
+      <div id="student_list">
+      <div class="student_entry">
+          <div class="name">Max</div>
+          <div class="surname">Example</div>
+          <div class="id">2352662</div>
+          <div class="department">CS</div>
+          <div class="DOB">03.11.1995</div>
+      </div>
+      </div>
+  </div>
+
+  <div class="container_1" id="add_cont" style="display:none;" class="answer_list">
       <form class = "form" id="addS">
           <h1 class="form__title">Add Student </h1>
           <div class="form__input-group">
-              <input type="text" class="form__input" placeholder="Student ID">
+              <input type="text" id="IDInput" class="form__input" placeholder="Student ID">
           </div>
           <div class="form__input-group">
-              <input type="name" class="form__input" placeholder="Student Name">
+              <input type="text" id="nameInput" class="form__input" placeholder="Student Name">
           </div>
           <div class="form__input-group">
-              <input type="lastname" class="form__input" placeholder="Student Lastname">
+              <input type="text" id="surnameInput" class="form__input" placeholder="Student Lastname">
           </div>
           <div class="form__input-group">
-              <input type="lastname" class="form__input" placeholder="Student Lastname">
+              <input type="text" id="depInput" class="form__input" placeholder="Department">
           </div>
           <div class="form__input-group">
-              <input type="Dob" class="form__input" placeholder="Date of birth">
+              <input type="text" id="dateInput" class="form__input" placeholder="Date of birth">
           </div>
           <div> <label >Gender</label> </div>
           <input type = radio name="gender" value="male">Male<br>
           <input type = radio name="gender" value="female">Female<br>
           <div class="form__input-group">
-              <input type="email" class="form__input" placeholder="Email_ID">
+              <input type="email" id="emailInput" class="form__input" placeholder="Email_ID">
           </div>
 
 
 
 
-          <button class="form__button" type ="submit">Continue</button>
+          <button  type ="submit" id="add_student" >Continue</button>
       </form>
   </div>
+
+
 
 </body>
 </html>
